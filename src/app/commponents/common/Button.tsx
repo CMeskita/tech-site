@@ -9,7 +9,7 @@ export function Button({children,onClick,bgcolor: bgcolor,destaque}:IButtonProps
     return (
        
               <button
-              
+                onClick={onClick}
                 className={`w-full px-6 py-3 rounded-lg font-semibold ${
                   destaque
                     ? `${bgcolor} text-white hover:bg-indigo-700`

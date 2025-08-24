@@ -14,14 +14,12 @@ import { HttpCustomError } from "./errorHttp/HttpCustomError";
    }[]
   
   
-   export async function getPlans(tenant: any) {
+   export async function getPlans() {
  
     debugger;
       //https://localhost:7199/api/v1/Plan
       const url = `${process.env.NEXT_PUBLIC_API_KEY}/Plan`;
-      const headers = new Headers({
-        'Content-type': 'application/json',
-      })
+
       console.log(url)
       const response = await fetch(url)
 

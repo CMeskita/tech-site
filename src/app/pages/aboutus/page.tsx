@@ -58,21 +58,21 @@ export default function SobreNos() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Membro 1 */}
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-               <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4"></Image>
+               <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4" />
            
               <h3 className="font-semibold text-gray-800">André Souza</h3>
               <p className="text-gray-600 text-sm">CEO & Fundador | Desenvlvedor Sênior</p>
             </div>
             {/* Membro 2 */}
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-                <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4"></Image>
+                <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4" />
            
               <h3 className="font-semibold text-gray-800">Diassis Lima</h3>
               <p className="text-gray-600 text-sm">Desenvolvedor Junior</p>
             </div>
             {/* Membro 3 */}
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-                <Image src={menina} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4"></Image>
+                <Image src={menina} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4"/>
            
               <h3 className="font-semibold text-gray-800">Mariana Alves</h3>
               <p className="text-gray-600 text-sm">Desenvolvedora Pleno</p>

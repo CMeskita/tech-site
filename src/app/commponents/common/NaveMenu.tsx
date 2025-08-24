@@ -1,4 +1,6 @@
 import React from "react";
+import logo from "@/app/image/logo.png";
+import Image from "next/image";
 
 export default function NaveMenu() {
   return (
@@ -7,12 +9,8 @@ export default function NaveMenu() {
         {/* LOGO */}
         <div className="flex items-center gap-2">
             <a href={'/'}>
-          <img
-            src="/logo.png" // Coloque sua logo aqui (ex: /public/logo.png)
-            alt="Logo"
-            className="h-10 w-auto"
-          />
-      </a>
+              <Image src={logo} alt="Logo" className="h-10 w-auto"/>
+                </a>
         </div>
 
         {/* NAVEGAÇÃO */}
