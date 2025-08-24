@@ -5,7 +5,7 @@ import { WhatsApp } from "../icons/Whatsapp";
 
 export function ContatosMidia() {
      const endereco = "Av. Beira Mar, Fortaleza, CE, Brasil"
-    const telefone = "(85) 98866-4185"
+    const telefone = " (85) 4011-8350"
   return (
    <section className="py-12 px-6 ">
     <div className="max-w-2xl mx-auto text-center">
