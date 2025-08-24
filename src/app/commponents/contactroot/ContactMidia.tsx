@@ -12,7 +12,7 @@ export function ContatosMidia() {
 
       <ul className="space-y-2">
         <li>
-                 <a href={`https://web.whatsapp.com/send?phone=${telefone}`}  className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-md" >
+                 <a href={`https://web.whatsapp.com/send?phone=${telefone}` } target="_blank" className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-md" >
                        <WhatsApp/>
                         <div>
                           <p className="font-semibold text-gray-800">WhatsApp</p>
