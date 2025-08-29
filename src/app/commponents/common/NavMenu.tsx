@@ -1,7 +1,6 @@
 import React from "react";
-import logo from "@/app/image/logo.png";
 import Image from "next/image";
-import ico from "@/app/Favicon.ico";
+import ico from "@/app/image/Favicon.ico";
 
 export default function NavMenu() {
   return (
