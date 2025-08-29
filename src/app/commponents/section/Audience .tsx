@@ -19,9 +19,7 @@ export function Audience() {
                   <div>
                     <Image src={homemnfe} alt={""} width={0} className="rounded-t-lg "/>
                      <Cards  classname={""}>
-                        <h3 className="text-xl text-green-800 font-semibold mb-6">Contadores e escritórios de contabilidade </h3>
-   
-                            
+                        <h3 className="text-xl text-green-800 font-semibold mb-4">Contadores e escritórios de contabilidade </h3>
                                 <ul className="text-left text-gray-600 space-y-2">
                                   <li>✔️ Segurança dos dados</li>
                                   <li>✔️ Acesso remoto</li>
@@ -34,9 +32,7 @@ export function Audience() {
                       <div>
                     <Image src={microempreendedor} alt={""} width={0} className="rounded-t-lg "/>
                      <Cards  classname={""}>
-                        <h3 className="text-xl text-green-800  font-semibold mb-6">Pequenos e médios comércios</h3>
-   
-                            
+                        <h3 className="text-xl text-green-800  font-semibold mb-4">Pequenos e médios comércios</h3>
                                 <ul className="text-left text-gray-600 space-y-2">
                                   <li>✔️ Segurança contra perdas</li>
                                   <li>✔️ Organização simples</li>
@@ -49,7 +45,7 @@ export function Audience() {
                       <div>
                     <Image src={contabilidade} alt={""} width={0} className="rounded-t-lg "/>
                      <Cards  classname={""}>
-                        <h3 className="text-xl text-green-800 font-semibold mb-6">Profissionais do setor fiscal </h3>
+                        <h3 className="text-xl text-green-800 font-semibold mb-4">Profissionais do setor fiscal </h3>
    
                             
                                 <ul className="text-left text-gray-600 space-y-2">
@@ -64,7 +60,7 @@ export function Audience() {
                       <div>
                     <Image src={frenteloja} alt={""} width={0} className="rounded-t-lg "/>
                      <Cards  classname={""}>
-                        <h3 className="text-xl text-green-800 font-semibold mb-6">Operadores de frente de loja que precisam validar XMLs </h3>
+                        <h3 className="text-xl text-green-800 font-semibold mb-4">Operadores de frente de loja que precisam validar XMLs </h3>
    
                            
                                 <ul className="text-left text-gray-600 space-y-2">
@@ -74,9 +70,7 @@ export function Audience() {
                                 </ul>
                        <Button  bgcolor="bg-green-600" destaque={destaque}>Saiba mais</Button>
                     </Cards>  
-                  </div>
-                 
-               
+                  </div>               
                 </div>
               </div>
             </section>
