@@ -1,11 +1,12 @@
 'use client'
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import build from "@/app/image/build.png";
+import servico from "@/app/image/servico.jpg";
+import marketing from "@/app/image/markting.jpg";
 
 const imagens = [
-  "https://www.imagemhost.com.br/images/2024/11/29/a-cinematic-shot-of-a-robot-with-a-large-screen-on-6aQQP2KXTzKkmUMCPvsGQA-A_mrp2_MRzmXAytE-VKW4Q.jpg",
-  "https://www.imagemhost.com.br/images/2024/11/29/a-cinematic-shot-of-a-robot-with-a-large-screen-on-6aQQP2KXTzKkmUMCPvsGQA-A_mrp2_MRzmXAytE-VKW4Q.jpg",
-  "https://www.imagemhost.com.br/images/2024/11/29/a-cinematic-shot-of-a-robot-with-a-large-screen-on-6aQQP2KXTzKkmUMCPvsGQA-A_mrp2_MRzmXAytE-VKW4Q.jpg"
+build,marketing,  servico
 ];
 
 export default function Banner() {
@@ -19,18 +20,18 @@ export default function Banner() {
   }, []);
 
   return (
-    <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-2xl shadow-lg">
+    <div className="relative w-full h-[300px] md:h-full overflow-hidden rounded-2xl shadow-lg">
       {/* Imagem atual */}
       <Image src={imagens[atual]} alt={"Banner"}  className="w-full h-full object-cover transition-all duration-700"/>
 
       {/* Indicadores */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+      <div className="rounded-2xl transition duration-300 transform hover:-translate-x-3 absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {imagens.map((_, index) => (
           <button
             key={index}
             onClick={() => setAtual(index)}
             className={`w-3 h-3 rounded-full ${
-              atual === index ? "bg-indigo-600" : "bg-gray-300"
+              atual === index ? "bg-green-600" : "bg-gray-300"
             }`}
           ></button>
         ))}

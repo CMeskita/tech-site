@@ -1,16 +1,19 @@
 import { Footer } from "@/app/commponents/common/Footer";
 import { Header } from "@/app/commponents/section/Header";
-import NaveMenu from "@/app/commponents/common/NaveMenu";
+import NavMenu from "@/app/commponents/common/NavMenu";
 import React from "react";
 import Image from 'next/image'
 import menina from "@/app/image/menina.jpg";
 import menino from "@/app/image/menino.jpg";
+import { Cards } from "@/app/commponents/common/Cards";
+import whats from "@/app/image/WhatsApp.svg.png";
+import { WhatsFlutuante } from "@/app/commponents/common/WhatsFlutuante";
 
 export default function SobreNos() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
-   <NaveMenu />
+      <NavMenu />
       <Header/>
  
 
@@ -22,7 +25,7 @@ export default function SobreNos() {
             Quem Somos
           </h1>
           <p className="text-gray-600 text-lg">
-            A <span className="font-semibold text-indigo-600">NFeBox</span> nasceu com o propósito
+            A <span className="font-semibold text-green-800">NFeBox</span> nasceu com o propósito
             de transformar a forma como empresas gerenciam seus documentos fiscais.
             Nossa missão é oferecer soluções digitais seguras, escaláveis e fáceis de usar.
           </p>
@@ -30,24 +33,25 @@ export default function SobreNos() {
 
         {/* Missão, visão e valores */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold text-gray-800 mb-2"><span className="font-semibold text-indigo-600">Missão</span></h3>
+
+          <Cards classname="bg-white p-6 rounded-xl shadow-md">
+           <h3 className="text-xl font-bold text-gray-800 mb-2"><span className="font-semibold text-green-800">Missão</span></h3>
             <p className="text-gray-600">
               Tornar o gerenciamento fiscal acessível, seguro e eficiente para todas as empresas.
             </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold text-gray-800 mb-2"><span className="font-semibold text-indigo-600">Visão</span></h3>
+         </Cards>
+            <Cards classname="bg-white p-6 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold text-gray-800 mb-2"><span className="font-semibold text-green-800">Visão</span></h3>
             <p className="text-gray-600">
               Ser referência em soluções digitais para documentos fiscais no Brasil.
             </p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold text-gray-800 mb-2"><span className="font-semibold text-indigo-600">Valores</span></h3>
+         </Cards>
+            <Cards classname="bg-white p-6 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold text-gray-800 mb-2"><span className="font-semibold text-green-800">Valores</span></h3>
             <p className="text-gray-600">
               Inovação, transparência, segurança e compromisso com nossos clientes.
             </p>
-          </div>
+         </Cards>
         </section>
 
         {/* Equipe */}
@@ -55,30 +59,31 @@ export default function SobreNos() {
           <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
             Nossa Equipe
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Membro 1 */}
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
-               <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4" />
-           
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <Cards classname="bg-white p-6 rounded-xl shadow-md text-center">
+                <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4" />
               <h3 className="font-semibold text-gray-800">André Souza</h3>
               <p className="text-gray-600 text-sm">CEO & Fundador | Desenvlvedor Sênior</p>
-            </div>
-            {/* Membro 2 */}
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
-                <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4" />
-           
+          </Cards>
+          <Cards classname="bg-white p-6 rounded-xl shadow-md text-center">
+            <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4" />
               <h3 className="font-semibold text-gray-800">Diassis Lima</h3>
-              <p className="text-gray-600 text-sm">Desenvolvedor Junior</p>
-            </div>
-            {/* Membro 3 */}
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
-                <Image src={menina} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4"/>
-           
+              <p className="text-gray-600 text-sm">Desenvolvedor Trainee</p>
+          </Cards>
+          <Cards classname="bg-white p-6 rounded-xl shadow-md text-center">
+            <Image src={menina} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4"/>
               <h3 className="font-semibold text-gray-800">Mariana Alves</h3>
               <p className="text-gray-600 text-sm">Desenvolvedora Pleno</p>
-            </div>
+          </Cards>
+          <Cards classname="bg-white p-6 rounded-xl shadow-md text-center">
+              <Image src={menino} alt={""} width={100} className="w-24 h-24 mx-auto rounded-full object-cover mb-4" />
+              <h3 className="font-semibold text-gray-800">Rangel Lima</h3>
+              <p className="text-gray-600 text-sm">Desenvolvedor Trainee</p>
+          </Cards>
           </div>
-        </section>
+
+            <WhatsFlutuante/>
+            </section>
       </div>
 
       {/* Rodapé */}

@@ -1,7 +1,9 @@
 'use client'
 import React, { useState } from "react";
+import { Button } from "../common/Button";
 
 export const SignupForm: React.FC = () => {
+  const destaque=true;
   const [form, setForm] = useState({ nome: "", email: "" });
   const [status, setStatus] = useState<string | null>(null);
 
@@ -16,8 +18,9 @@ export const SignupForm: React.FC = () => {
   };
 
   return (
-    <section id="cadastro" className="py-12 px-6 bg-indigo-100">
-      <div className="max-w-lg mx-auto text-center">
+    <section id="cadastro" className="py-12 px-6 bg-green-100 rounded-xl shadow-md">
+      
+      <div className="max-w-lg mx-auto text-center ">
         <h2 className="text-2xl font-bold mb-4">Receba acesso antecipado</h2>
         <p className="mb-6">
           Entre para a lista e seja um dos primeiros a testar gratuitamente.
@@ -41,12 +44,9 @@ export const SignupForm: React.FC = () => {
             onChange={handleChange}
             required
           />
-          <button
-            type="submit"
-            className="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700"
-          >
-            Quero testar agora
-          </button>
+         <Button  bgcolor={"bg-green-600"} destaque={destaque}>Quero testar agora</Button>
+            
+      
         </form>
         {status && <p className="mt-4 text-green-600 font-semibold">{status}</p>}
       </div>
